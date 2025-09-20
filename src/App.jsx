@@ -9,6 +9,7 @@ import AboutUS from "./pages/AboutUS";
 import NotFound from "./pages/NotFound";
 import InstructorDashboard from "./pages/instructor/InstructorDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Pricing from "./pages/Pricing";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about-us" element={<AboutUS />} />
+      <Route path="/pricing" element={<Pricing />} />
       <Route path="*" element={<NotFound />} />
       <Route
         path="/student/my-courses"
