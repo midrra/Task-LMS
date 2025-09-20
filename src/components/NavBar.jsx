@@ -11,7 +11,9 @@ function NavBar() {
 
   return (
     <nav className="shadow-md px-4 py-3 flex items-center justify-between relative">
-      <h1 className="font-bold text-xl">Al-Awael</h1>
+      <h1 className="font-bold text-xl cursor-pointer">
+        <Link to="/">Al-Awael</Link>
+      </h1>
 
       <div className="hidden md:flex space-x-2 items-center md:text-sm lg:text-base">
         <Link
