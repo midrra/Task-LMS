@@ -1,5 +1,4 @@
 import React from "react";
-import searchIcon from "../assets/search_icon.svg";
 
 function SearchBar() {
   return (
@@ -10,7 +9,6 @@ function SearchBar() {
         placeholder="Search here"
         className="w-full max-w-md px-4 py-2 rounded-lg border border-gray-300 focus:border-orange-400 outline-none transition-colors duration-150"
       />
-      <img src={searchIcon} alt="searchIcon" />
     </div>
   );
 }
