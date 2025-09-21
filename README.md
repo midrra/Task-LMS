@@ -39,7 +39,7 @@ cd task-lms
 
 ### 2. Install dependencies
 
-Frontend:
+-Frontend:
 cd client
 npm install
 
@@ -63,8 +63,8 @@ Frontend deployed on Vercel
 
 Backend deployed on Railway
 
-📸 Screenshots
-![Screenshot](./public/Screenshot_lms.png)
+📸 ```Screenshots
+![Screenshot](./public/Screenshot_lms.png)```
 
 👤 Author
 MOHAMED AWAD – [GitHub](https://github.com/midrra)
