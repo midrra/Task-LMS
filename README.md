@@ -1,12 +1,71 @@
-# React + Vite
+# 📚 Task LMS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Learning Management System (LMS) built with **React (Vite)**, **Node.js/Express**, and **MongoDB**.  
+It allows students to browse courses, enroll, and track progress, while instructors and admins manage content and users.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 Authentication (JWT-based login & logout)
+- 👩‍🎓 Student dashboard (view & enroll in courses)
+- 👨‍🏫 Instructor dashboard (manage courses & students)
+- 🛠 Admin dashboard (manage users & system settings)
+- 📱 Responsive design with TailwindCSS
+- ⚡ Fast front-end powered by React + Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+**Frontend:** React, Vite, TailwindCSS, React Router  
+**Backend:** Node.js, Express, MongoDB, JWT Authentication  
+**Deployment:** Vercel (frontend), Railway/Render/Atlas (backend + DB)
+
+---
+
+## 📂 Project Structure
+
+---
+
+## ⚡ Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/task-lms.git
+cd task-lms
+```
+
+### 2. Install dependencies
+
+Frontend:
+cd client
+npm install
+
+Backend:
+cd server
+npm install
+
+### 4. Run the app
+
+Start frontend:
+cd client
+npm run dev
+
+Start backend:
+cd server
+npm run dev
+
+🌍 Deployment
+
+Frontend deployed on Vercel
+
+Backend deployed on Railway
+
+📸 Screenshots
+![Screenshot](./public/Screenshot_lms.png)
+
+👤 Author
+MOHAMED AWAD – [GitHub](https://github.com/midrra)
+| [LinkedIn](https://www.linkedin.com/in/mohamed-3wad/)
