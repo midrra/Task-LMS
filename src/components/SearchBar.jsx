@@ -7,7 +7,7 @@ function SearchBar() {
       <input
         type="search"
         placeholder="Search here"
-        className="w-50 m-auto text-center max-w-md px-4 py-2 rounded-lg border border-gray-300 focus:border-orange-400 outline-none transition-colors duration-150"
+        className="w-50 md:w-full m-auto text-center max-w-md px-4 py-2 rounded-lg border border-gray-300 focus:border-orange-400 outline-none transition-colors duration-150"
       />
     </div>
   );
