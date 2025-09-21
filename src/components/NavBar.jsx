@@ -50,7 +50,7 @@ function NavBar() {
         )}
         {user?.role === "instructor" && (
           <Link
-            to="/instructor/dashboard "
+            to="/instructor/dashboard"
             className="px-2 py-1 rounded hover:bg-orange-400 transition"
           >
             Instructor
@@ -117,47 +117,65 @@ function NavBar() {
         `}
       >
         <Link
+          to="/"
           className="px-4 py-2 rounded hover:bg-orange-400 transition"
           onClick={toggleMenu}
         >
           Home
         </Link>
         <Link
-          className="px-4 py-2 rounded hover:bg-orange-400 transition"
-          onClick={toggleMenu}
-        >
-          All Courses
-        </Link>
-        <Link
-          className="px-4 py-2 rounded hover:bg-orange-400 transition"
-          onClick={toggleMenu}
-        >
-          About Us
-        </Link>
-        <Link
-          className="px-4 py-2 rounded hover:bg-orange-400 transition"
-          onClick={toggleMenu}
-        >
-          Instructors
-        </Link>
-        <Link
+          to="/pricing"
           className="px-4 py-2 rounded hover:bg-orange-400 transition"
           onClick={toggleMenu}
         >
           Pricing & FAQ
         </Link>
         <Link
+          to="/contact"
           className="px-4 py-2 rounded hover:bg-orange-400 transition"
           onClick={toggleMenu}
         >
           Contact
         </Link>
-        <button
-          className="px-6 py-2 rounded-full bg-orange-400 hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
+        <Link
+          to="about-us"
+          className="px-4 py-2 rounded hover:bg-orange-400 transition"
           onClick={toggleMenu}
         >
-          Create Account
-        </button>
+          About Us
+        </Link>
+        {user?.role === "student" && (
+          <Link
+            to="/student/my-courses"
+            className="px-2 py-1 rounded hover:bg-orange-400 transition"
+          >
+            My Courses
+          </Link>
+        )}
+        {user?.role === "instructor" && (
+          <Link
+            to="/instructor/dashboard"
+            className="px-4 py-2 rounded hover:bg-orange-400 transition"
+            onClick={toggleMenu}
+          >
+            Instructors
+          </Link>
+        )}
+        {user?.role === "admin" && (
+          <Link
+            to="/admin/dashboard "
+            className="px-2 py-1 rounded hover:bg-orange-400 transition"
+          >
+            Admin Dashboard
+          </Link>
+        )}
+        <MainButton className="mt-4">
+          {user ? (
+            <img src={ProfileIcon} alt="ProfileIcon" />
+          ) : (
+            <Link to="/login">Create Account</Link>
+          )}
+        </MainButton>
       </div>
     </nav>
   );

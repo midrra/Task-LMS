@@ -10,7 +10,7 @@ function Home() {
   return (
     <Fragment>
       <div
-        className="text-white min-h-screen"
+        className="text-white min-h-screen bg-center bg-cover bg-no-repeat relative"
         style={{ backgroundImage: `url(${Background})` }}
       >
         <div className="absolute inset-0 bg-black/50"></div>

@@ -7,7 +7,7 @@ import SearchBar from "./SearchBar";
 function Hero() {
   return (
     <main className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center space-y-7">
-      <h1 className="text-4xl font-bold">Welcome to Al-Awael</h1>
+      <h1 className="text-2xl md:text-4xl font-bold">Welcome to Al-Awael</h1>
       <p className="text-lg">Your journey to knowledge begins here.</p>
       <div className="flex  w-100 items-center justify-center space-x-4">
         <Link to="/student/my-courses">
