@@ -49,11 +49,11 @@ npm install
 
 ### 4. Run the app
 
-Start frontend:
+- Start frontend:
 cd client
 npm run dev
 
-Start backend:
+# Start backend:
 cd server
 npm run dev
 
